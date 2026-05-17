@@ -33,7 +33,7 @@ st.markdown(
         }
 
         h3 {
-            color: #cbd5e1;
+            color: black;
             text-align: center;
         }
 
