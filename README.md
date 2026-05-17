@@ -64,8 +64,10 @@ Collected dataset of used cars in Nigeria.
 
 ### 6. Model Explainability
 - Used SHAP to interpret feature importance
+  
+## SHAP Summary Plot
 
-
+![SHAP Summary](shap_summary.png)
 ---
 
 ## Installation
