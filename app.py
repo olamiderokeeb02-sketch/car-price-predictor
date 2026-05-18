@@ -25,17 +25,11 @@ st.markdown(
         .main {
             background-color: #0f172a;
         }
-
-       h1 {
+h1 {
+    color: #cbd5e1;
     text-align: center;
     font-size: 50px;
-    color: black;
 }
-
-@media (prefers-color-scheme: dark) {
-    h1 {
-        color: white;
-    }
 }
 
         h3 {
