@@ -22,33 +22,21 @@ model = joblib.load("car_model.joblib")
 st.markdown(
     """
     <style>
-        /* Main background */
         .main {
-            background-color: transparent;
+            background-color: #0f172a;
         }
-        /* LIGHT MODE */
+
         h1 {
-            color: #111827;
+            color: Red;
             text-align: center;
             font-size: 50px;
         }
+
         h3 {
-            color: #475569;
+            color: #cbd5e1;
             text-align: center;
         }
-        /* DARK MODE */
-        @media (prefers-color-scheme: dark) {
-            h1 {
-                color: #F8FAFC;
-            }
-            h3 {
-                color: #CBD5E1;
-            }
-            .prediction-box {
-                background: #1e293b;
-                color: white;
-            }
-        }
+
         .stButton>button {
             width: 100%;
             background: #2563eb;
@@ -58,19 +46,21 @@ st.markdown(
             font-size: 18px;
             border: none;
         }
+
         .prediction-box {
             padding: 20px;
+            background: #1e293b;
             border-radius: 12px;
             text-align: center;
+            color: white;
             font-size: 28px;
             margin-top: 20px;
-            background: #e2e8f0;
-            color: #111827;
         }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 # ----------------------------
 # HEADER
 # ----------------------------
