@@ -22,21 +22,33 @@ model = joblib.load("car_model.joblib")
 st.markdown(
     """
     <style>
+        /* Main background */
         .main {
-            background-color: #0f172a;
+            background-color: transparent;
         }
-
+        /* LIGHT MODE */
         h1 {
-            color: Red;
+            color: #111827;
             text-align: center;
             font-size: 50px;
         }
-
         h3 {
-            color: #cbd5e1;
+            color: #475569;
             text-align: center;
         }
-
+        /* DARK MODE */
+        @media (prefers-color-scheme: dark) {
+            h1 {
+                color: #F8FAFC;
+            }
+            h3 {
+                color: #CBD5E1;
+            }
+            .prediction-box {
+                background: #1e293b;
+                color: white;
+            }
+        }
         .stButton>button {
             width: 100%;
             background: #2563eb;
@@ -46,25 +58,23 @@ st.markdown(
             font-size: 18px;
             border: none;
         }
-
         .prediction-box {
             padding: 20px;
-            background: #1e293b;
             border-radius: 12px;
             text-align: center;
-            color: white;
             font-size: 28px;
             margin-top: 20px;
+            background: #e2e8f0;
+            color: #111827;
         }
     </style>
     """,
     unsafe_allow_html=True
 )
-
 # ----------------------------
 # HEADER
 # ----------------------------
-st.markdown("<h1>🚘 DriveValuenG</h1>", unsafe_allow_html=True)
+st.markdown("<h1> 🚘 DriveValuenG</h1>", unsafe_allow_html=True)
 st.markdown("<h3>Estimated Car Price Predictor</h3>", unsafe_allow_html=True)
 
 st.write(" Enter the car details below to estimate its market value in Nigeria")
