@@ -7,7 +7,11 @@ The model is built using a Random Forest Regressor and includes SHAP (SHapley Ad
 ---
 ### Live App Link -> https://driveng-2hhrwddtcvqrhwagpzpejz.streamlit.app/#estimated-car-price-predictor
 ---
+---
+## Demo Video
 
+[![Watch Demo](https://img.youtube.com/vi/cWBAOD7HxV0/maxresdefault.jpg)](https://youtu.be/cWBAOD7HxV0)
+---
 ## 📌 Project Overview
 
 DriveValue Nigeria helps users:
